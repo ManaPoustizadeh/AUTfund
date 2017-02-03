@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>second</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/my-css.css" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar my-top-navbar">
+    <div class="container-fluid row">
+        <!--<h2 class="text-center" style="display: inline-block;">Search Res</h2>-->
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="#" class="top-nabvar-text">Back</a>
+            </li>
+            <!--<li class="active">-->
+            <!--<a href="#" class="top-nabvar-text">Search Results</a>-->
+            <!--</li>-->
+            <li class="">
+                <input class="form-control my-input" type="Search" placeholder="Search..." style="margin-top: 8px; width: 200%;">
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+
+            <li>
+                <a href="#" class="top-nabvar-text">Search</a>
+            </li>
+
+            <li>
+                <a href="#" class="top-nabvar-text">Login</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<div class="container my-whole-page">
+    <div class="row">
+        <div class="container-fluid filter_res col-lg-4 col-sm-4">
+            <h2 class="title">Add</h2>
+            <ul class="list-group">
+                <li class="list-group-item side-list" id="category">
+                    <i class="fa fa-caret-right" style="font-size: 25px" aria-hidden="true"></i>
+                    <span class="list-span">Category</span>
+                </li>
+                <div class="container-fluid" id="categoryOpen" style="display: none;">
+                    <br>
+                    <div class="form-group">
+                        <label class="control-label" for="name-input1">Name:</label>
+                        <input type="text" class="form-control" id="name-input1" placeholder="For example Sabbatical, student">
+                        <label class="control-label" for="parent-input">Parent:</label>
+                        <select class="form-control" title="Choose your option..." id="parent-input">
+                            <option>option 1</option>
+                            <option>option 2</option>
+                            <option>option 3</option>
+                            <option>option 4</option>
+                            <option>option 5</option>
+                        </select>
+                        <div class="text-center">
+                            <button class="btn btn-success my-btn" style="margin: 15px 0 5px 0;" type="submit">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <li class="list-group-item side-list" id="fundOrg">
+                    <i class="fa fa-caret-right" style="font-size: 25px" aria-hidden="true"></i>
+                    <span class="list-span">Funding Organization</span>
+                </li>
+                <div class="container-fluid" id="fundOrgOpen" style="display: none;">
+                    <div class="form-group">
+                        <label class="control-label" for="name-input2">Name:</label>
+                        <input type="text" class="form-control" id="name-input2" placeholder="For example DAAD, MPG">
+                        <label class="control-label" for="country-input">Country:</label>
+                        <select class="form-control" title="Choose your option..." id="country-input">
+                            <option>option 1</option>
+                            <option>option 2</option>
+                            <option>option 3</option>
+                            <option>option 4</option>
+                            <option>option 5</option>
+                        </select>
+                        <div class="text-center">
+                            <button class="btn btn-success my-btn" style="margin: 15px 0 5px 0;" type="submit">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <li class="list-group-item side-list" id="country">
+                    <i class="fa fa-caret-right" style="font-size: 25px" aria-hidden="true"></i>
+                    <span class="list-span">Country</span>
+                </li>
+                <div class="container-fluid" id="countryOpen" style="display: none;">
+                    <div class="form-group">
+                        <label class="control-label" for="name-input3">Name:</label>
+                        <input type="text" class="form-control" id="name-input3" placeholder="For example Germany, France">
+                        <div class="text-center">
+                            <button class="btn btn-success my-btn" style="margin: 15px 0 5px 0;" type="submit">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <li class="list-group-item side-list" id="ResArea">
+                    <i class="fa fa-caret-right" style="font-size: 25px" aria-hidden="true"></i>
+                    <span class="list-span">Research Area</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container-fluid col-sm-7 col-lg-7">
+            <div class="container-fluid filter_res" style="margin: 15px 0 15px 0;">
+                <h2 class="title">Edit Fund</h2>
+                <div class="well">
+                    <label class="control-label" for="fund-name">Fund name:</label>
+                    <input class="form-control my-input well-input" placeholder="For example Postdoctoral Researchers’ Networking Tour …" type="text" id="fund-name">
+                    <div class="text-center">
+                        <button class="btn btn-danger my-btn" style="margin: 15px 0 5px 0;" type="submit">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="js/my-js2.js"></script>
+</body>
+</html>
